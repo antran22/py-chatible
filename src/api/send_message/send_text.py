@@ -10,4 +10,4 @@ def send_text(recipient_id, message):
     }
     response = requests.post(url, json=data)
     if response.status_code != 200:
-        raise Exception("Request error")
+        raise Exception("Request error", response.text)

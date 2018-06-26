@@ -10,4 +10,4 @@ def send_video(recipient_id, media_url):
     }
     response = requests.post(url, json=data)
     if response.status_code != 200:
-        raise Exception("Request error")
+        raise Exception("Request error", response.text)
