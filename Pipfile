@@ -9,6 +9,7 @@ pymongo = "*"
 requests = "*"
 python-dotenv = "*"
 gunicorn = "*"
+flask-pymongo = "*"
 
 [dev-packages]
 
